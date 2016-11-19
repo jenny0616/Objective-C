@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ProductViewDelegate;
+
 @interface ProductView : UIView
+
+@property (nonatomic, weak) id <ProductViewDelegate> delegate;
+- (instancetype)initWithData:(NSDictionary *)data;
+
+- (NSInteger)getPrice;
+- (NSString *)getTitle;
+
+@end
+
+@protocol ProductViewDelegate <NSObject>
+
+- (void)didSelectedProductView:(ProductView *)productView;
 
 @end
