@@ -1,0 +1,59 @@
+//
+//  ViewController.m
+//  VendingMachine
+//
+//  Created by 노정우 on 2016. 11. 19..
+//  Copyright © 2016년 jenny0616. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+
+@property (nonatomic) NSArray *productData;
+@property (nonatomic) NSArray *moneyData;
+
+@property (nonatomic, weak) UIView *productContainerView;   //  global variable that include productViews
+@property (nonatomic) NSMutableArray *productViews;
+
+@property (nonatomic, assign) NSInteger remainMoney;
+@property (nonatomic, weak) UIView *remainMoneyView;
+@property (nonatomic, weak) UILabel *remainMoneyLabel;
+
+@property (nonatomic, weak) UIView *moeneyInputView;
+@property (nonatomic) NSMutableArray *moneyInputButtons;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    //  setting dummy data include title, price, image filename.
+    self.productData = @[@{@"title":@"A코스",@"price":@"1000",@"imageName":@"island1"},
+                         @{@"title":@"B코스",@"price":@"2000",@"imageName":@"island2"},
+                         @{@"title":@"C코스",@"price":@"3000",@"imageName":@"island3.jpg"},
+                         @{@"title":@"D코스",@"price":@"4000",@"imageName":@"island4.jpg"}];
+    
+    self.moneyData = @[@"10000", @"5000", @"1000"];
+    
+    self.productViews = [[NSMutableArray alloc] init];
+    self.moneyInputButtons = [[NSMutableArray alloc] init];
+    
+}
+
+- (void)createView {
+    
+}
+
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+
+@end
