@@ -41,13 +41,25 @@
     self.productViews = [[NSMutableArray alloc] init];
     self.moneyInputButtons = [[NSMutableArray alloc] init];
     
+    [self createView];
+    [self updateLayout];
 }
 
 - (void)createView {
+    UIView *productContainerView = [[UIView alloc] init];
+    [productContainerView setBackgroundColor:[UIColor magentaColor]];
+    [self.view addSubview:productContainerView];
+    self.productContainerView = productContainerView;
+    
     
 }
 
-
+- (void)updateLayout {
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    
+    CGFloat baseViewOffsetY = 45;
+    [self.productContainerView setFrame:CGRectMake(20, baseViewOffsetY, self.view.frame.size.width - 40, 400 + 10)];
+}
 
 
 - (void)didReceiveMemoryWarning {
