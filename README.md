@@ -1,3 +1,3 @@
 # Objective-C
 
-This repository includes `simple examples` and `Xcode snippet` in Objective-C
+This repository includes `simple examples`, `Xcode snippet` and mini projects in Objective-C
