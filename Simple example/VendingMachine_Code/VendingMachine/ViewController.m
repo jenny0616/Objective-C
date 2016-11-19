@@ -51,6 +51,10 @@
     [self.view addSubview:productContainerView];
     self.productContainerView = productContainerView;
     
+    for (NSInteger i = 0; i < 4; i++) {
+        
+    }
+    
     
 }
 
