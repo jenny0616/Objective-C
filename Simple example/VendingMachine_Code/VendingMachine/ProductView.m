@@ -53,8 +53,11 @@
     [button setFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
     [button addTarget:self action:@selector(onTouchupInsideProduct:) forControlEvents:UIControlEventTouchUpInside];
     [button setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
+    [button setTitle:[self.data objectForKey:@"title"] forState:UIControlStateHighlighted];
+    
     [self addSubview:button];
 }
+
 
 - (void)onTouchupInsideProduct:(UIButton *)sender {
     if ([self.delegate respondsToSelector:@selector(didSelectedProductView:)]) {
