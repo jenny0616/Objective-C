@@ -33,8 +33,8 @@
     //  setting dummy data include title, price, image filename.
     self.productData = @[@{@"title":@"제니",@"price":@"4000",@"imageName":@"bpjenny.jpeg"},
                          @{@"title":@"지수",@"price":@"4000",@"imageName":@"bpjisoo.jpeg"},
-                         @{@"title":@"로제",@"price":@"1000",@"imageName":@"bprose.jpeg"},
-                         @{@"title":@"리사",@"price":@"2000",@"imageName":@"bplisa.jpeg"}];
+                         @{@"title":@"로제",@"price":@"3000",@"imageName":@"bprose.jpeg"},
+                         @{@"title":@"리사",@"price":@"4000",@"imageName":@"bplisa.jpeg"}];
     
     self.moneyData = @[@"10000", @"5000", @"1000"];
     
