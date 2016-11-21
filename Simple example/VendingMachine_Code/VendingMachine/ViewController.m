@@ -45,6 +45,7 @@
     [self updateLayout];
 }
 
+#pragma mark - create views
 - (void)createView {
     UIView *productContainerView = [[UIView alloc] init];
     [productContainerView setBackgroundColor:[UIColor blackColor]];
@@ -91,6 +92,7 @@
     
 }
 
+#pragma mark - adjust layout
 - (void)updateLayout {
     [self.view setBackgroundColor:[UIColor blackColor]];
     
@@ -118,6 +120,7 @@
     }
 }
 
+#pragma mark - alert
 -(void)didSelectedProductView:(ProductView *)product {
     NSString *title = [product getTitle];
     NSInteger price = [product getPrice];
@@ -141,6 +144,7 @@
     
 }
 
+#pragma mark - button method
 - (void)onTouchupInsideMoney:(UIButton *)sender {
     NSInteger selectedTag = sender.tag;
     NSString *insertedMoney = [self.moneyData objectAtIndex:selectedTag];
